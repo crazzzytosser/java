@@ -21,7 +21,7 @@ public class LaptopFilterApp {
         while (true) {
             System.out.println("Меню:");
             System.out.println("1 - Задать количество ноутбуков.");
-            System.out.println("2 - Выходю.");
+            System.out.println("2 - Выход.");
             System.out.print("Выберите действие: ");
             int choice = scanner.nextInt();
 
@@ -102,7 +102,7 @@ public class LaptopFilterApp {
                     case 2:
                     case 3:
                         scanner.nextLine();
-                        System.out.print("Введите значения через запятую: ");
+                        System.out.print("Введите значения через запятую, соблюдая регистр: ");
                         String values = scanner.nextLine();
                         filterCriteria.put(filterChoice, values);
                         break;
